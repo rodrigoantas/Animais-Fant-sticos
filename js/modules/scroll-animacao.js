@@ -5,7 +5,7 @@ export default function initScrollSite() {
   function animaScroll() {
     scroll.forEach((section) => {
       const sectionTop = section.getBoundingClientRect().top - window60;
-      if (sectionTop < 0) {
+      if (sectionTop < 10) {
         section.classList.add("ativo");
       }
     });

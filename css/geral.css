@@ -302,3 +302,30 @@ body {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+
+.funcionamento-aberto::after {
+  content: 'ABERTO';
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: #58FF6F;
+  color: black;
+  font-family: 'IBM Plex Mono';
+  margin-left: 3px;
+  padding: 2px;
+  border: 2px solid #222;
+  border-radius: 5px;
+}
+.funcionamento-fechado::after {
+  content: 'FECHADO';
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: #FF3B28;
+  color: black;
+  font-family: 'IBM Plex Mono';
+  margin-left: 3px;
+  padding: 2px;
+  border: 2px solid #222;
+  border-radius: 5px;
+}
