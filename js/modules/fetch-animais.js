@@ -5,13 +5,18 @@ export default function initFetchNumeros() {
 
 
  async function fetchURL(url) {
+   try{
+
     const resposta = await fetch(url);
     const respostaJSON = await (await resposta.json());
-
     respostaJSON.forEach(animal => {
       createAnimal(animal)
     })
     initAnimaNUmeros();
+  }
+    catch(error) {
+      console.log(Error(error));
+    }
 
   }
 
