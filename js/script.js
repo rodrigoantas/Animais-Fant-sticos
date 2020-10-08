@@ -1,7 +1,7 @@
 import ScrollSuave from './modules/scroll-suave.js';
 import initScrollSite from './modules/scroll-animacao.js';
 import Accordion from './modules/accordion-list.js';
-import initTab from './modules/tab-nav.js';
+import TabNav from './modules/tab-nav.js';
 import initModal from './modules/modal.js';
 import initTooltip from './modules/tooltip.js';
 import initDropdownMenu from './modules/dropdown-menu.js';
@@ -16,13 +16,13 @@ scrollSuave.init();
 const accordion = new Accordion('[data-anime="accordion"] dt', '[data-anime="accordion"] dd')
 accordion.init();
 
+const tabNav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
+tabNav.init();
 
 
 
 initMenuMobile();
 initScrollSite();
-
-initTab();
 initModal();
 initTooltip();
 initDropdownMenu();
