@@ -16,7 +16,7 @@ export default class Accordion {
   });
   }
   init(){
-    this.accordionDescription.classList.add('ativo')
+    this.addActive(0);
     this.addEvent();
     return this
   }
