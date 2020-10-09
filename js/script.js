@@ -1,5 +1,5 @@
-import ScrollSuave from './modules/scroll-suave.js';
-import initScrollSite from './modules/scroll-animacao.js';
+import SmoothScroll from './modules/smooth-scroll.js';
+import AnimeScroll from './modules/anime-scroll.js';
 import Accordion from './modules/accordion-list.js';
 import TabNav from './modules/tab-nav.js';
 import Modal from './modules/modal.js';
@@ -10,8 +10,8 @@ import initFuncionamento from './modules/funcionamento.js';
 import fetchAnimals from './modules/fetch-animais.js';
 
 
-const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
-scrollSuave.init();
+const smoothScroll = new SmoothScroll('[data-menu="suave"] a[href^="#"]');
+smoothScroll.init();
 
 const accordion = new Accordion('[data-anime="accordion"] dt', '[data-anime="accordion"] dd')
 accordion.init();
@@ -25,8 +25,12 @@ modal.init();
 const tooltip = new Tooltip('[data-tooltip]');
 tooltip.init();
 
+const animeScroll = new AnimeScroll('[data-anime="scroll"]');
+animeScroll.init()
+
+
 initMenuMobile();
-initScrollSite();
+
 
 initDropdownMenu();
 initFuncionamento();
