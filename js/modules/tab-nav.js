@@ -3,6 +3,8 @@ export default class TabNav {
     this.menu = document.querySelectorAll(menu);
     this.content = document.querySelectorAll(content);
     this.activeClass = 'ativo';
+    //bind
+    this.addActive = this.addActive.bind(this)
   }
   addActive(index) {
       this.content.forEach((section) => {
@@ -15,9 +17,7 @@ export default class TabNav {
 
   addTabNavEvent() {
       this.menu.forEach((img, index) => {
-      img.addEventListener("click", function () {
-        this.addActive(index);
-      });
+      img.addEventListener("click", () =>  this.addActive(index));
     });
     }
     
