@@ -37,4 +37,4 @@ menuMobile.init();
 const operation = new Operation('[data-semana]')
 operation.init();
 
-fetchAnimals('../../animaisapi.json', '.numeros-grid')
+fetchAnimals('./animaisapi.json', '.numeros-grid')
