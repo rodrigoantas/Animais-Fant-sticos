@@ -1,8 +1,8 @@
-export default class initModal {
-  constructor(abrir, fechar, content) {
-     this.botaoAbrir = document.querySelector(abrir)
-     this.botaoFechar = document.querySelector(fechar)
-     this.containerModal = document.querySelector(content)
+export default class Modal {
+  constructor(open, close, content) {
+     this.openButton = document.querySelector(open)
+     this.closeButton = document.querySelector(close)
+     this.modalContainer = document.querySelector(content)
 
      // dar o bind para o event listener
      this.toggleModal = this.toggleModal.bind(this);
@@ -13,18 +13,18 @@ export default class initModal {
 
   toggleModal(event) {
     event.preventDefault();
-    this.containerModal.classList.toggle('ativo');
+    this.modalContainer.classList.toggle('ativo');
   
   }
   foraDoModal(event) {
-    if (event.target === this.containerModal)
+    if (event.target === this.modalContainer)
       this.toggleModal(event);
   
   }
   addEvent() {
-    this.botaoAbrir.addEventListener('click', this.toggleModal);
-    this.botaoFechar.addEventListener('click', this.toggleModal);
-    this.containerModal.addEventListener('click', this.foraDoModal);
+    this.openButton.addEventListener('click', this.toggleModal);
+    this.closeButton.addEventListener('click', this.toggleModal);
+    this.modalContainer.addEventListener('click', this.foraDoModal);
   }
 
   init(){

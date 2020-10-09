@@ -7,7 +7,7 @@ import Tooltip from './modules/tooltip.js';
 import MenuMobile from './modules/menu-mobile.js';
 import fetchAnimals from './modules/fetch-animais.js';
 import DropdownMenu from './modules/dropdown-menu.js';
-import Operation from './modules/funcionamento.js';
+import Operation from './modules/operation.js';
 
 
 const smoothScroll = new SmoothScroll('[data-menu="suave"] a[href^="#"]');
