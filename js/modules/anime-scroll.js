@@ -5,6 +5,8 @@ export default class AnimeScroll {
     this.window50 = window.innerHeight * 0.5;
     this.checkDistance = this.checkDistance.bind(this)
   }
+
+  //pega a distância de cada item
   getDistance() {
     this.distance = this.sections.map((section) => {
       const offset = section.offsetTop;
@@ -14,6 +16,7 @@ export default class AnimeScroll {
       };
     });
   }
+  //checa se a distância passou da metade da janela
   checkDistance() {
     this.distance.forEach((section) => {
       if (window.pageYOffset > section.offset) {
