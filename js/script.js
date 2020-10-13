@@ -8,7 +8,7 @@ import MenuMobile from './modules/menu-mobile.js';
 import fetchAnimals from './modules/fetch-animais.js';
 import DropdownMenu from './modules/dropdown-menu.js';
 import Operation from './modules/operation.js';
-
+import SlideNav from './modules/slide.js';
 
 const smoothScroll = new SmoothScroll('[data-menu="suave"] a[href^="#"]');
 smoothScroll.init();
@@ -38,3 +38,7 @@ const operation = new Operation('[data-semana]')
 operation.init();
 
 fetchAnimals('./animaisapi.json', '.numeros-grid')
+
+const slide = new SlideNav('.slide', '.slide-wrapper');
+slide.init();
+slide.addControl();
