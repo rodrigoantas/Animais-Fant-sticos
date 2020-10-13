@@ -2,7 +2,7 @@ export default class AnimeScroll {
   constructor(sections) {
     this.sectionsNode = document.querySelectorAll(sections)
     this.sections = Array.from(this.sectionsNode);
-    this.window50 = window.innerHeight * 0.5;
+    this.window50 = window.innerHeight * 0.7;
     this.checkDistance = this.checkDistance.bind(this)
   }
 
