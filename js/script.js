@@ -1,5 +1,5 @@
 import SmoothScroll from './modules/smooth-scroll.js';
-import AnimeScroll from './modules/anime-scroll.js';
+import AnimeScroll from './modules/animate-scroll.js';
 import Accordion from './modules/accordion-list.js';
 import TabNav from './modules/tab-nav.js';
 import Modal from './modules/modal.js';

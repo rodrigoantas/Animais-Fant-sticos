@@ -1,4 +1,4 @@
-import AnimeNumbers from './anime-numbers.js';
+import AnimeNumbers from './animate-numbers.js';
 
 export default function fetchAnimals(url, target) {
   // Cria a div contendo informações dos animais
